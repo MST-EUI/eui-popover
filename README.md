@@ -1,2 +1,9 @@
-# eui-popover
-a popover react component
+# eui 组件模板
+
+## Usage
+
+```
+npm i
+npm start
+```
+
