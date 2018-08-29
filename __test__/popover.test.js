@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-14';
-import EmptyData from '../src';
+import EmptyData from '../src/index';
 
 Enzyme.configure({ adapter: new Adapter() });
 

@@ -1,56 +1,28 @@
 import React from 'react';
-import classnames from 'classnames';
-import i18n from './i18n';
+import Tooltip from 'rc-tooltip';
+// import i18n from './i18n';
 
 import './style/index.scss';
 
-const { PropTypes } = React;
+// const { PropTypes } = React;
 
 export default class Popover extends React.Component {
   static displayName = 'eui-popover';
 
   static propTypes = {
-    locale: PropTypes.string,
-    icon: PropTypes.string,
-    prefixCls: PropTypes.string,
-    theme: PropTypes.string,
-    style: PropTypes.object,
-    className: PropTypes.string,
   };
 
   static defaultProps = {
-    locale: 'zh-cn',
-    icon: '//cdn.ewt360.com/ewt360/images/images/searchno.jpg?t=201806222330',
-    prefixCls: 'eui-popover',
-    theme: 'default',
-    style: {},
-    className: '',
   };
 
   render() {
-    const {
-      prefixCls,
-      locale,
-      icon,
-      style,
-      className,
-    } = this.props;
-
+    const { props } = this;
+    const { children, ...rest } = props;
+    // console.log(rest);
     return (
-      <div
-        className={classnames({ [prefixCls]: true }, { [className]: !!className })}
-        style={style}
-      >
-        <div
-          className={`${prefixCls}-icon`}
-          style={{
-            backgroundImage: `url(${icon})`,
-          }}
-        />
-        <div className={`${prefixCls}-content`}>123
-          {i18n[locale].description}
-        </div>
-      </div>
+      <Tooltip {...rest}>
+        {children}
+      </Tooltip>
     );
   }
 }
