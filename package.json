@@ -50,7 +50,7 @@
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "@mistong/eui-button": "^0.1.3",
-    "@mistong/eui-cli": "^0.1.11",
+    "@mistong/eui-cli": "^0.1.13",
     "@mistong/eui-css": "^0.1.2",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^23.2.0",

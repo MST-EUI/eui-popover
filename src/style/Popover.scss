@@ -1,0 +1,139 @@
+@import '../../node_modules/@mistong/eui-css/variable.scss';
+
+$prefix: 'eui-popover';
+
+$border-color: $gray-light;
+
+$arrow-width: 7px;
+
+$distance: $arrow-width + 4px;
+
+$arrow-outer-width: $arrow-width + 1px;
+
+.#{$prefix} {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  cursor: auto;
+  user-select: text;
+  white-space: normal;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: normal;
+  text-align: left;
+  &-hidden {
+    // display: none;
+  }
+
+  &-placement-top,
+  &-placement-topLeft,
+  &-placement-topRight {
+    margin-top: -$arrow-width;
+    padding-bottom: $distance;
+  }
+
+  &-placement-right,
+  &-placement-rightTop,
+  &-placement-rightBottom {
+    margin-left: $arrow-width;
+    padding-left: $distance;
+  }
+
+  &-placement-bottom,
+  &-placement-bottomLeft,
+  &-placement-bottomRight {
+    margin-top: $arrow-width;
+    padding-top: $distance;
+  }
+
+  &-placement-left,
+  &-placement-leftTop,
+  &-placement-leftBottom {
+    margin-left: -$arrow-width;
+    padding-right: $distance;
+  }
+
+
+  &-inner {
+    min-width: 135px;
+    max-width: 310px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px 0px $border-color;
+    padding: 16px 16px 16px 24px;
+  }
+
+  &-arrow {
+    &,
+    &:after {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+    }
+  }
+
+  &-arrow {
+    border-width: $arrow-outer-width;
+  }
+
+  &-arrow:after {
+    border-width: $arrow-outer-width;
+    content: "";
+  }
+
+  &-placement-top &-arrow,
+  &-placement-topLeft &-arrow,
+  &-placement-topRight &-arrow {
+    left: 50%;
+    border-bottom-width: 0;
+    border-top-color: $gray-lighter;
+    bottom: $distance - $arrow-outer-width + 1;
+    &:after {
+      content: " ";
+      bottom: 3px;
+      margin-left: -$arrow-width;
+      border-bottom-width: 0;
+      border-top-color: #fff;
+    }
+  }
+  &-placement-topLeft &-arrow {
+    left: 10px;
+  }
+  &-placement-topRight &-arrow {
+    right: 10px;
+    left: auto;
+  }
+  &-placement-top &-arrow {
+    margin-left: -$arrow-outer-width;
+  }
+
+  &-placement-right &-arrow,
+  &-placement-rightTop &-arrow,
+  &-placement-rightBottom &-arrow {
+    top: 50%;
+    left: $distance - $arrow-outer-width + 1;
+    border-left-width: 0;
+    border-right-color: $border-color;
+    &:after {
+      content: " ";
+      left: 1px;
+      bottom: -$arrow-width;
+      border-left-width: 0;
+      border-right-color: #fff;
+    }
+  }
+  &-placement-rightTop &-arrow {
+    top: 10px;
+  }
+  &-placement-rightBottom &-arrow {
+    top: auto;
+    bottom: 10px;
+  }
+  &-placement-right &-arrow {
+    margin-top: -$arrow-outer-width;
+  }
+}
