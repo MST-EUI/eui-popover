@@ -1,5 +1,5 @@
 {
-  "name": "eui-popover",
+  "name": "@mistong/eui-popover",
   "version": "0.1.0",
   "description": "a popover react component",
   "main": "dist/index.js",
