@@ -20,7 +20,7 @@ class Demo extends React.Component {
       </div>
     );
     return (
-      <div style={{ marginLeft: 150, marginTop: 150 }}>
+      <div style={{ marginLeft: 250, marginTop: 150 }}>
         <div style={{ marginLeft: 78 }}>
           <Popover placement="topLeft" title="上左" overlay={overlay}>
             <Button type="primary">上左</Button>

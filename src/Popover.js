@@ -1,7 +1,7 @@
-// import 'rc-tooltip/assets/bootstrap.css';
 import React from 'react';
 import Tooltip from 'rc-tooltip';
 // import i18n from './i18n';
+// import 'rc-tooltip/assets/bootstrap.css';
 
 import './style/index.scss';
 

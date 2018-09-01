@@ -6,7 +6,7 @@ $border-color: $gray-light;
 
 $arrow-width: 7px;
 
-$distance: $arrow-width + 4px;
+$distance: $arrow-width + 1px;
 
 $arrow-outer-width: $arrow-width + 1px;
 
@@ -23,7 +23,7 @@ $arrow-outer-width: $arrow-width + 1px;
   font-weight: normal;
   text-align: left;
   &-hidden {
-    // display: none;
+    display: none;
   }
 
   &-placement-top,
@@ -94,8 +94,8 @@ $arrow-outer-width: $arrow-width + 1px;
     bottom: $distance - $arrow-outer-width + 1;
     &:after {
       content: " ";
-      bottom: 3px;
-      margin-left: -$arrow-width;
+      bottom: 0px;
+      margin-left: -$arrow-width - 1;
       border-bottom-width: 0;
       border-top-color: #fff;
     }
@@ -120,8 +120,8 @@ $arrow-outer-width: $arrow-width + 1px;
     border-right-color: $border-color;
     &:after {
       content: " ";
-      left: 1px;
-      bottom: -$arrow-width;
+      left: 0px;
+      bottom: -$arrow-width - 1;
       border-left-width: 0;
       border-right-color: #fff;
     }
@@ -134,6 +134,58 @@ $arrow-outer-width: $arrow-width + 1px;
     bottom: 10px;
   }
   &-placement-right &-arrow {
+    margin-top: -$arrow-outer-width;
+  }
+
+  &-placement-bottom &-arrow,
+  &-placement-bottomLeft &-arrow,
+  &-placement-bottomRight &-arrow {
+    left: 50%;
+    border-top-width: 0;
+    border-bottom-color: $border-color;
+    top: $distance - $arrow-outer-width + 1;
+    &:after {
+      content: " ";
+      top: 0px;
+      margin-left: -$arrow-width - 1;
+      border-top-width: 0;
+      border-bottom-color: #fff;
+    }
+  }
+  &-placement-bottomLeft &-arrow {
+    left: 10px;
+  }
+  &-placement-bottomRight &-arrow {
+    right: 10px;
+    left: auto;
+  }
+  &-placement-bottom &-arrow {
+    margin-left: -$arrow-outer-width;
+  }
+
+  &-placement-left &-arrow,
+  &-placement-leftTop &-arrow,
+  &-placement-leftBottom &-arrow {
+    top: 50%;
+    right: $distance - $arrow-outer-width + 1;
+    border-right-width: 0;
+    border-left-color: $border-color;
+    &:after {
+      content: " ";
+      right: 0px;
+      border-right-width: 0;
+      border-left-color: #fff;
+      bottom: -$arrow-width - 1;
+    }
+  }
+  &-placement-leftTop &-arrow {
+    top: 10px;
+  }
+  &-placement-leftBottom &-arrow {
+    bottom: 10px;
+    top: auto;
+  }
+  &-placement-left &-arrow {
     margin-top: -$arrow-outer-width;
   }
 }
