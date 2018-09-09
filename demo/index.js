@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'rc-tooltip/assets/bootstrap.css';
 import ReactDOM from 'react-dom';
 import Button from '@mistong/eui-button';
@@ -6,21 +6,15 @@ import Popover from '../src/index';
 
 import './demo.scss';
 
-class Demo extends React.Component {
+class HoverDemo extends Component {
   render() {
-    // const me = this;
     const overlay = (
       <div>
-        <div style={{
-          height: 50, width: 50,
-          }}
-        >
-          this is a tooltip!
-        </div>
+          这是个自定义的tooltip overlay!
       </div>
     );
     return (
-      <div style={{ marginLeft: 250, marginTop: 150 }}>
+      <div style={{ marginLeft: 250, marginTop: 50 }}>
         <div style={{ marginLeft: 78 }}>
           <Popover placement="topLeft" title="上左" overlay={overlay}>
             <Button type="primary">上左</Button>
@@ -33,7 +27,7 @@ class Demo extends React.Component {
           </Popover>
         </div>
         <div style={{ width: 78, float: 'left' }}>
-          <Popover placement="leftTop" title="左上" overlay={overlay}>
+          <Popover trigger="click" placement="leftTop" title="左上" overlay={overlay}>
             <Button type="primary">左上</Button>
           </Popover>
           <Popover placement="left" title="左边" overlay={overlay}>
@@ -70,7 +64,28 @@ class Demo extends React.Component {
   }
 }
 
+class ClickDemo extends Component {
+  render() {
+    return (
+      <div style={{ marginTop: 50 }}>
+        <Popover
+          trigger="click"
+          title="这是Popover的title"
+          content="这是Popover的content这是Popover的content这是Popover的content这是Popover的content"
+        >
+          <Button type="primary">点击弹出</Button>
+        </Popover>
+      </div>
+    );
+  }
+}
+
 ReactDOM.render(
-  <Demo />,
+  <div className="demo">
+    <h1>悬浮弹出</h1>
+    <HoverDemo />
+    <h1 style={{ marginTop: 50 }}>点击弹出</h1>
+    <ClickDemo />
+  </div>,
   document.getElementById('app'),
 );
