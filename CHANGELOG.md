@@ -1,5 +1,15 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/MST-EUI/EUI-component-tpl/compare/v0.1.1...v0.1.2) (2018-10-18)
+
+
+### Bug Fixes
+
+* demo.scss to be index.scss ([369bb55](https://github.com/MST-EUI/EUI-component-tpl/commit/369bb55))
+
+
+
 <a name="0.1.1"></a>
-## 0.1.1 (2018-10-18)
+## [0.1.1](https://github.com/MST-EUI/EUI-component-tpl/compare/6106c88...v0.1.1) (2018-10-18)
 
 
 ### Features
