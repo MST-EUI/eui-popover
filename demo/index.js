@@ -19,7 +19,7 @@ import '@mistong/eui/dist/index.css';
 import Popover from '../src';
 /* placeholder end src */
 
-import './demo.scss';
+import './index.scss';
 
 class HoverDemo extends Component {
   render() {
