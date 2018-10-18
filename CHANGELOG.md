@@ -1,16 +1,14 @@
-<a name="0.1.5"></a>
-## [0.1.5](https://github.com/MST-EUI/EUI-component-tpl/compare/v1.0.4...v0.1.5) (2018-08-27)
-
-
-### Bug Fixes
-
-* **workflow:** use prepublishOnly replace prepare ([9030662](https://github.com/MST-EUI/EUI-component-tpl/commit/9030662))
-* **workflow:** use prepublishOnly replace prepare ([50972bd](https://github.com/MST-EUI/EUI-component-tpl/commit/50972bd))
+<a name="0.1.1"></a>
+## 0.1.1 (2018-10-18)
 
 
 ### Features
 
-* **workflow:** add workflow tools ([677df5b](https://github.com/MST-EUI/EUI-component-tpl/commit/677df5b))
+* **style:** adjust style ([bc24594](https://github.com/MST-EUI/EUI-component-tpl/commit/bc24594))
+* add overlay ([c1a8ec3](https://github.com/MST-EUI/EUI-component-tpl/commit/c1a8ec3))
+* add rc-tooltip ([f712d8f](https://github.com/MST-EUI/EUI-component-tpl/commit/f712d8f))
+* initialize project ([6106c88](https://github.com/MST-EUI/EUI-component-tpl/commit/6106c88))
+* new demo ([b518ce6](https://github.com/MST-EUI/EUI-component-tpl/commit/b518ce6))
 
 
 
