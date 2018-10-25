@@ -252,6 +252,7 @@ ReactDOM.render(
             </tr>
           </tbody>
         </table>
+        <p>其余参数可详细参考 <a target="__blank" href="https://github.com/react-component/tooltip">rc-tools</a></p>
       </Demo>
     );
   }
