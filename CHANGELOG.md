@@ -1,3 +1,13 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/MST-EUI/EUI-component-tpl/compare/v0.1.3...v0.1.4) (2018-10-25)
+
+
+### Features
+
+* add rc-tools link for demo ([809b80b](https://github.com/MST-EUI/EUI-component-tpl/commit/809b80b))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/MST-EUI/EUI-component-tpl/compare/v0.1.2...v0.1.3) (2018-10-25)
 
