@@ -209,28 +209,28 @@ ReactDOM.render(
           </thead>
           <tbody>
             <tr>
-              <td>type</td>
-              <td>背景图片类型 (<Code mode="inline">small</Code> <Code mode="inline">medium</Code> <Code mode="inline">large</Code>)</td>
+              <td>placement</td>
+              <td>显示位置 ({['left', 'right', 'top', 'bottom', 'topLeft', 'topRight', 'bottomLeft', 'bottomRight'].map(item => <Code key={item} mode="inline">{item}</Code>)})</td>
               <td>string</td>
-              <td><Code mode="inline">medium</Code></td>
+              <td />
             </tr>
             <tr>
               <td>children</td>
-              <td>描述文案</td>
+              <td>触发显示的元素</td>
               <td>any</td>
-              <td>暂无数据</td>
+              <td />
             </tr>
             <tr>
-              <td>icon</td>
-              <td>自定义图片</td>
+              <td>trigger</td>
+              <td>触发事件的方式({['hover', 'click'].map(item => <Code key={item} mode="inline">{item}</Code>)})</td>
               <td>string</td>
-              <td>https://yukap6.github.io/images/empty.png</td>
+              <td><Code mode="inline">hover</Code></td>
             </tr>
             <tr>
-              <td>lang</td>
-              <td>语言包类型 (<Code mode="inline">zh-cn</Code> <Code mode="inline">en</Code>)</td>
-              <td>string</td>
-              <td><Code mode="inline">zh-cn</Code></td>
+              <td>overlay</td>
+              <td>悬浮显示的内容</td>
+              <td>any</td>
+              <td />
             </tr>
             <tr>
               <td>className</td>
